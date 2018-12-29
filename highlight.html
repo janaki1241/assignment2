@@ -1,15 +1,10 @@
-<html><head>
+<html>
+<head>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/agate.min.css">
-    
+  
 <style>
-
-body {
-  font-family: Arial;
-  color: blue;
-}
-
 .split {
   height: 100%;
   width: 50%;
@@ -28,6 +23,7 @@ body {
 
   right: 0;
   background-color:black;
+color:blue;
 }
 
 
@@ -38,9 +34,8 @@ body {
 
 <div class="split left">
      <h1>hiii</h1>
- 
+  Enter your name:<input type="text"/>
      </div>
-
 
 <div class="split right">
 <script>
@@ -52,7 +47,7 @@ function showSource(){;
     source += "</html>";
     //now we need to escape the html special chars, javascript has escape
     //but this does not do what we want
-    source = source.replace(/</g, "<").replace(/>/g, ">");
+    source = source.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     //now we add <pre> tags to preserve whitespace
     source = "<pre>"+source+"</pre>";
     //now open the window and set the source as the content
@@ -62,6 +57,7 @@ function showSource(){;
     if(window.focus) sourceWindow.focus();
      document.writeln(source);
 }
-</script></div></body></html>
-                       
- 
+</script>     
+   </div>
+</body>
+</html>
