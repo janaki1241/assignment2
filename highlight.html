@@ -1,49 +1,49 @@
-<html>
-    <head>
-         <link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-            <script>hljs.initHighlightingOnLoad();</script>
-        <link rel="stylesheet"
-      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.13.1/build/styles/default.min.css">
-<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.13.1/build/highlight.min.js"></script>
+<html><head>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/agate.min.css">
+    
+<style>
 
-
-
-
-        <style>
-            .division{
-  width:50%;
-  height:100%;
-  float:left;
-  left:0; 
-  position:fixed;
-  z-index=1;
-  top=0; 
-   overflow-x: hidden;
-  
-
-                
+body {
+  font-family: Arial;
+  color: blue;
 }
-             .division1{
-  width:50%;
-  height:100%;
-  float:right;
-   right:0; 
-   position:fixed;
-  z-index=1;
-  top=0; 
-  overflow-x : hidden;
-               
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
-        </style>
-    </head>
- <body>      
-<div  class="division">
-     <h1>HII<h1>
-      <input type="text" value="enter ur name"></div>
-<div  class="division1">
-    <script>
+.leftpart {
+  left: 0;
+
+}
+
+.rightpart {
+
+  right: 0;
+  background-color:black;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="split leftpart">
+     <h1>hiii</h1>
+ 
+     </div>
+
+
+<div class="split rightpart">
+<script>
 
 showSource();
 function showSource(){;
@@ -62,9 +62,6 @@ function showSource(){;
     if(window.focus) sourceWindow.focus();
      document.writeln(source);
 }
-</script>
-</div>
-</body>
-    </html>
+</script></div></body></html>
                        
  
